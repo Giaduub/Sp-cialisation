@@ -1,5 +1,15 @@
 <?php 
 
+
+
+function wpc_theme_support() {
+    add_theme_support('custom-logo', array(
+    'flex-height' => true,
+    'flex-width' => true,
+    ));
+    }
+    add_action('after_setup_theme','wpc_theme_support');
+
 // on créé une zone pour le menu 
 register_nav_menu( 'menuheader', 'Menu du Header' );
 register_nav_menu( 'menufooter', 'Menu du Footer' );

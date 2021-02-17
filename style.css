@@ -103,8 +103,14 @@ Theme Name: Template de base
 
 /* Carousel */
 
-.carousel{
-    box-shadow: rgba(0,0,0,0.3);
+.carousel-control-prev-icon{
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 50%;
 }
 
 .carousel-img{
@@ -112,7 +118,24 @@ Theme Name: Template de base
     box-shadow: rgba(0,0,0,0.3);
 }
 
+/* CSS Team Section Mobile */
+.blackF{
+    background-color: black;
+    height: 250px;
+    margin: -10px;
+    transform: rotate(2deg);
+}
 
+.white{
+    height: 250px;
+}
+
+.blackS{
+    background-color: black;
+    height: 250px;
+    margin: -10px;
+    transform: rotate(-2deg);
+}
 
 /* CSS Team section  */
 
@@ -120,18 +143,18 @@ Theme Name: Template de base
 .hrBase{
     background-color: black;
     height: 20px;
-    margin: -4px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    transform: rotate(-1deg);
+    margin: -10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transform: rotate(-2deg);
 }
 
 .team{
     background-color: black;
-    margin: -4px;
+    margin: -10px;
     position: relative;
     min-height: 400px;
-    transform: rotate(-1deg);
+    transform: rotate(-2deg);
 }
 
 .allTeam{
@@ -140,9 +163,7 @@ Theme Name: Template de base
 
 /* Img Team */
 
-.equipe{
 
-}
 
 /* Circle team animation */
 
@@ -166,6 +187,8 @@ Theme Name: Template de base
 	clear: both;
 }
 
+/* Grid + Space size */
+
 .ch-grid li {
 	width: 220px;
 	height: 220px;
@@ -180,6 +203,9 @@ Theme Name: Template de base
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	cursor: default;
 }
+
+
+/* Circle Size */
 
 .ch-info-wrap, 
 .ch-info{
@@ -237,27 +263,14 @@ Theme Name: Template de base
 	transition: all 0.4s ease-in-out 0.2s;
 }
 
-.ch-img-1 { 
-	background-image: url(../images/13.jpg);
-}
-
-.ch-img-2 { 
-	background-image: url(../images/14.jpg);
-}
-
-.ch-img-3 { 
-	background-image: url(../images/15.jpg);
-}
-
 .ch-info h3 {
-	color: #fff;
+	color: black;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 18px;
 	margin: 0 15px;
 	padding: 40px 0 0 0;
 	height: 80px;
-	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow: 
 		0 0 1px #fff, 
 		0 1px 2px rgba(0,0,0,0.3);
@@ -274,7 +287,7 @@ Theme Name: Template de base
 
 .ch-info p a {
 	display: block;
-	color: #e7615e;
+	color: #EF1B9A;
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -333,26 +346,66 @@ Theme Name: Template de base
 footer{
 background-color: black;  
 margin: -2px;
-height: 100px;
+height: 50px;
 transform: rotate(1deg);
 color: white;
 }
 
+
+
+/* Common */
+
 .triangle{
-    position: absolute;
-    bottom:-12%;
-    height: 90px;
-    z-index: -1;
-    width: 100%;
     background-color: black;
+    margin-top: -20px;
+    height: 100px;
 }
 
-
+.custom-logo{
+  max-width: 50px;
+  max-height: 50px;
+}
 
 body{
     margin: 0;
     padding: 0;
 }
+
+
+/* page Boutique */ 
+
+/* Produits */
+
+.product{
+    padding-top: 60px;
+    min-height: 400px;
+}
+
+.box{
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    width: 180px;
+    margin-right: 40px;
+}
+
+.imgb{
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 45%;
+}
+
+.stat{
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
 
 
 /* Media queries */
@@ -365,9 +418,23 @@ body{
     .socialmedia{
         display: none;
     }
+    
 }
-@media(min-width:768px){}
+@media(min-width:768px){
+    .desktop{
+        display: none;
+    }
+    .socialmedia{
+        display: none;
+    }
+}
 @media(min-width:992px){
+    .desktop{
+        display: block;
+    }
+    .mobileFirst{
+        display:none;
+    }
 
     /* Social Link */
 
@@ -405,12 +472,13 @@ border-radius: 10px;
 }
 
 .equipe{
+    bottom: 25%;
     left: 5%;
     position: absolute;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 20px;
-    transform: rotate(-90deg);
+    transform: rotate(-87deg);
     text-transform: none !important;
     line-height: 1.3 !important;
     font-weight: 400 !important;
@@ -421,12 +489,12 @@ border-radius: 10px;
 
 .equipe::after{
     content: "";
-    transform: rotate(-90deg);
-    height: 90px !important;
+    transform: rotate(-91deg);
+    height: 130px !important;
     width: 1px;
     display: inline-flex;
+    margin-left: 80px;
     background-color: white;
-    margin-bottom: 20px;
 }
 }
 @media(min-width:1200px){}
