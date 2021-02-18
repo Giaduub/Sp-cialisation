@@ -2,6 +2,8 @@
 
 <?php get_header(); ?>
 
+
+
 <!-- Début de la Boucle. -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

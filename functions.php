@@ -42,6 +42,17 @@ register_sidebar( array(
 
 add_action( 'widgets_init', 'header_widgets_init' );
 
+// Ajouter la prise en charge des images mises en avant
+add_theme_support( 'post-thumbnails' );
+
+add_action( 'init', function() {
+    add_image_size( 'wpcm_my_custom_listing_image_size', 600, 300, true );
+  } );
+  
+  add_filter( 'wpcm_listings_vehicle_thumbnail_size', function( $image_size ) {
+    return 'wpcm_my_custom_listing_image_size';
+  } );
+
 
 //‘name’ = nom de la “widget area” qui apparaîtra dans votre administration WordPress
 //‘id’ = identifiant unique de votre “widget area”

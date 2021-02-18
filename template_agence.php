@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 
+<section>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-6 text-center">
@@ -35,4 +36,5 @@
 echo '<div><p>'.$map.'</p></div>'
 
 ?>
+</section>
 <?php get_footer(); ?>
