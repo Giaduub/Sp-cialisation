@@ -117,8 +117,8 @@ echo '<p class="goodPeople">'.$para.'</p>';
      <ul class="ch-grid">
      <?php $imgcowork3 = get_field('img_cowork3');
                      $name3 = get_field('name_work3');
-                     $git3 = get_field ('git_cowork3');
-                     $link3 = get_field ('linkedin_cowork3');
+                     $git3 = get_field ('git_work3');
+                     $link3 = get_field ('linkedin_work3');
 
                     echo '<li>
                          <div class="ch-item ch-img-3">

@@ -1,6 +1,10 @@
 <?php 
 
 
+function disable_woo_commerce_sidebar() {
+	remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10); 
+}
+add_action('init', 'disable_woo_commerce_sidebar');
 
 function wpc_theme_support() {
     add_theme_support('custom-logo', array(
@@ -52,6 +56,8 @@ add_action( 'init', function() {
   add_filter( 'wpcm_listings_vehicle_thumbnail_size', function( $image_size ) {
     return 'wpcm_my_custom_listing_image_size';
   } );
+
+
 
 
 //‘name’ = nom de la “widget area” qui apparaîtra dans votre administration WordPress

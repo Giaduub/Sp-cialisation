@@ -8,7 +8,7 @@
 <?php while (have_posts()) : the_post();?>
 <div class="post">
 <h1 class="post-title"><?php the_title(); ?></h1>
-<?php the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));?>
+<?php the_post_thumbnail('img', array('class' => 'img-fluid'));?>
 <p class="post-info">
 Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
 </p>

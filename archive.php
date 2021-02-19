@@ -13,7 +13,7 @@ get_header(); ?>
  
  echo '<div class="row blogarticle align-items-center">
        <div class="col-sm-12 col-lg-6">'?>
-        <?php the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));
+        <?php the_post_thumbnail('img', array('class' => 'img-fluid'));
       echo '</div>' ?>
 
 
